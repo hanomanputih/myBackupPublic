@@ -1,0 +1,139 @@
+<html {$html_attrs}>
+<head><title>Pelaksana Tugas</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#center_block{$id} {width:automargin:0 auto;min-width:500px;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;text-align:center;}
+#main_block{$id} {padding:10px 0;text-align:center;}
+#inmain_block{$id} {margin:0 10px}
+#fields_block{$id} {width:100%;margin-top:10px;}
+#buttons_block{$id} {padding-bottom:5px;white-space:nowrap;}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px}
+</style>
+<!--[if IE]>
+<style>
+#main_block{$id} {padding:10px 10;}
+#inmain_block{$id} {margin:0 0px;width:100%}
+</style>
+<![endif]-->
+{END style_block}
+</head>
+<body>
+{BEGIN body}
+{$header}
+{BEGIN addForm}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+{BEGIN flybody}
+<b class="xtop"><b class="rb1 rb1_top"></b><b class="rb2 rb2_top"></b><b class="rb3 rb3_top"></b><b class="rb4 rb4_top"></b></b>
+<div id="header_block{$id}" class="top">
+Pelaksana Tugas, Tambah record baru
+</div>
+<div id="main_block{$id}" class="xboxcontentb" >
+<div id="inmain_block{$id}" class="xboxcontentb" >
+{BEGIN message_block}
+<div id="message_block{$id}" class="downedit">{$message}</div>
+{END message_block}
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+
+{BEGIN id_unit_fieldblock}
+<tr>
+    <td class=editshadeleft_b width=150 style="padding-left:15px;">
+	{BEGIN id_unit_label}Unit Organisasi{END id_unit_label}
+</td>
+    <td width=250 class=editshaderight_lb style="padding-left:10px;">
+    {$id_unit_editcontrol}
+  </td></tr>
+{END id_unit_fieldblock}
+{BEGIN Nama_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Nama lengkap</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Nama_editcontrol}
+  </td></tr>
+{END Nama_fieldblock}
+{BEGIN Jabatan_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Jabatan</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Jabatan_editcontrol}
+  </td></tr>
+{END Jabatan_fieldblock}
+{BEGIN Telp_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Telp</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Telp_editcontrol}
+  </td></tr>
+{END Telp_fieldblock}
+{BEGIN Foto_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Pas Foto</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Foto_editcontrol}
+  </td></tr>
+{END Foto_fieldblock}
+{BEGIN Alamat_Rumah_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Alamat Rumah</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Alamat_Rumah_editcontrol}
+  </td></tr>
+{END Alamat_Rumah_fieldblock}
+{BEGIN Alamat_Kantor_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Alamat Kantor</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Alamat_Kantor_editcontrol}
+  </td></tr>
+{END Alamat_Kantor_fieldblock}
+{BEGIN HP_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">HP</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$HP_editcontrol}
+  </td></tr>
+{END HP_fieldblock}
+{BEGIN email_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Email</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$email_editcontrol}
+  </td></tr>
+{END email_fieldblock}
+</table>
+<div class="downedit2" id="buttons_block{$id}">
+	{BEGIN legend}
+	<div id="required_block{$id}" ><img alt="bullet" src="images/icon_required.gif"> - Field harus diisi</div>
+	{END legend}
+	{$legendBreak}
+	{BEGIN save_button}
+	<span class=buttonborder><input class=button type=submit value="Simpan" {$savebutton_attrs}></span>
+	{END save_button} 
+	{BEGIN back_button}
+	<span class=buttonborder><input class=button type=button value="Kembali" {$backbutton_attrs}></span>
+	{END back_button}
+	{BEGIN cancel_button}
+	<span class=buttonborder><input class=button type=button value="Batal" {$cancelbutton_attrs}></span>
+	{END cancel_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+{END flybody}
+</td></tr></table>
+{END addForm}
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+{BEGIN mainmenu_block}
+{BEGIN mainmenustyle_block}
+<style>
+/* For Gmenu on the list page */
+.Gmenu ul, .Gmenu ul li{margin:0;padding:0;display:inline;}
+.Gmenu ul li {float:left;width:auto;}
+.Gmenu ul li a.ahr{padding:0 9px;}
+.Gmenu ul li ul {display:none;position:absolute;z-index:1;}
+.Gmenu ul li ul li {display:block;border-top:0px;padding: 2px 0 2px 0;white-space:nowrap;}
+</style>
+<!--[if IE]>
+<style>.Gmenu ul li ul{left:0px;}</style>
+<![endif]-->
+
+<style>
+/* for Paris */
+.menutab1 {float:left;border-collapse: collapse;margin-top:1px}
+.menutab1 * {padding:0;margin:0}
+.menutab2 {border-style:solid;border-width:1px;border-right:none;border-bottom:none;height:25px}
+.menutab3 {border-style:solid;border-width:1px;border-bottom:none; border-right:none;padding:3px;height:18px;}
+.menutab3 a {white-space:nowrap}
+.unselect{background-image: url(include/img/menu_blue_unselect.gif);}
+.select{background-image: url(include/img/menu_blue_select.gif);}
+.back_img{background-repeat:no-repeat;background-position: top right;padding-right:12px;}
+/* for Madrid */
+.menuitem {padding:6px 18px 10px 13px;margin-bottom:1px;}
+.activeM {padding:6px 18px 11px 13px;}
+.main_item{margin-right:2px;}
+</style>
+<!--[if IE]>
+{BEGIN mainmenuiestyle_block}
+<style>
+.menutab2 {height:26px;}
+.menutab3 {height:25px;}
+</style>
+{END mainmenuiestyle_block}
+<![endif]-->
+{END mainmenustyle_block}
+<div  class="Gmenu">
+<ul>
+	{BEGIN item1_menulink}
+	<li id="li1" view="topitem" >
+	{BEGIN tophorizontal_item}
+<div ve="noedit" class="Madrid main_item">
+	<b class=xtop>
+{BEGIN item1_notcurrent}
+		<b class="rb1 rb1_menu"></b><b class="rb2 rb2_menu"></b><b class="rb3 rb3_menu"></b><b class="rb4 rb4_menu"></b>
+{END item1_notcurrent}
+{BEGIN item1_current}	
+		<b class="rb1 rb1_menua"></b><b class="rb2 rb2_menua"></b><b class="rb3 rb3_menua"></b><b class="rb4 rb4_menua"></b>
+{END item1_current}
+	</b>
+	<div class='menuitem{BEGIN needcurrent_item}{BEGIN item1_current}_active activeM{END item1_current}{END needcurrent_item}'>
+		<span ve="edit" class="spanborder{BEGIN needcurrent_item}{BEGIN item1_current}_active{END item1_current}{END needcurrent_item}">
+			<a {$item1_menulink_attrs} class='menu_db{BEGIN needcurrent_item}{BEGIN item1_current}2 current{END item1_current}{END needcurrent_item}' >{$item1_title}</a>
+		</span>
+	</div>
+</div>
+{END tophorizontal_item}
+{BEGIN topvertical_item}
+{BEGIN needcurrent_item}
+<a {$item1_menulink_attrs} class='menu_db{BEGIN item1_current}2 current{END item1_current}' >{$item1_title}</a>
+{END needcurrent_item}
+{BEGIN notneedcurrent_item}
+	{BEGIN simplevertical_item}
+	
+	{END simplevertical_item}
+	<a {$item1_menulink_attrs} class='{BEGIN vertical_typemenu}menuhref{END vertical_typemenu}{BEGIN horizontal_typemenu}menu_db{END horizontal_typemenu} ' >{$item1_title}</a>
+{END notneedcurrent_item}
+
+
+
+{END topvertical_item}
+
+	</li>
+	{END item1_menulink}
+	{BEGIN item2_menulink}
+	<li id="li2" view="topitem" >
+	{BEGIN tophorizontal_item}
+<div ve="noedit" class="Madrid main_item">
+	<b class=xtop>
+{BEGIN item2_notcurrent}
+		<b class="rb1 rb1_menu"></b><b class="rb2 rb2_menu"></b><b class="rb3 rb3_menu"></b><b class="rb4 rb4_menu"></b>
+{END item2_notcurrent}
+{BEGIN item2_current}	
+		<b class="rb1 rb1_menua"></b><b class="rb2 rb2_menua"></b><b class="rb3 rb3_menua"></b><b class="rb4 rb4_menua"></b>
+{END item2_current}
+	</b>
+	<div class='menuitem{BEGIN needcurrent_item}{BEGIN item2_current}_active activeM{END item2_current}{END needcurrent_item}'>
+		<span ve="edit" class="spanborder{BEGIN needcurrent_item}{BEGIN item2_current}_active{END item2_current}{END needcurrent_item}">
+			<a {$item2_menulink_attrs} class='menu_db{BEGIN needcurrent_item}{BEGIN item2_current}2 current{END item2_current}{END needcurrent_item}' >{$item2_title}</a>
+		</span>
+	</div>
+</div>
+{END tophorizontal_item}
+{BEGIN topvertical_item}
+{BEGIN needcurrent_item}
+<a {$item2_menulink_attrs} class='menu_db{BEGIN item2_current}2 current{END item2_current}' >{$item2_title}</a>
+{END needcurrent_item}
+{BEGIN notneedcurrent_item}
+	{BEGIN simplevertical_item}
+	
+	{END simplevertical_item}
+	<a {$item2_menulink_attrs} class='{BEGIN vertical_typemenu}menuhref{END vertical_typemenu}{BEGIN horizontal_typemenu}menu_db{END horizontal_typemenu} ' >{$item2_title}</a>
+{END notneedcurrent_item}
+
+
+
+{END topvertical_item}
+
+	</li>
+	{END item2_menulink}
+</ul>
+</div>
+{END mainmenu_block}

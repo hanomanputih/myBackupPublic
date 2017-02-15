@@ -1,0 +1,104 @@
+#message-box-curtain {
+    background-color:rgb( 255, 255, 255 );
+    filter:alpha( opacity = 66 );
+    left:0;
+    opacity:0.66;
+    padding:0;
+    position:absolute;
+    margin:0;
+    top:0;
+    width:100%;
+    z-index:200;
+    -khtml-opacity:0.66;
+    -moz-opacity:0.66;
+}
+
+#message-box-shadow {
+    background-color:rgb( 0,204, 255 );
+    display:none;
+    filter:alpha( opacity = 33 );
+    opacity:0.33;
+    position:absolute;
+    width:350px;
+    
+    -khtml-opacity:0.33;
+    -moz-opacity:0.33;
+    
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+
+    z-index:201;
+}
+
+#message-box-stage {
+    color:#000;
+    display:none;
+    font-family:verdana;
+    padding:25px 10px;
+    position:absolute;
+    width:330px;
+    z-index:202;
+}
+
+#message-box-stage .message-box-icon {
+    text-align:center;
+    width:100%;
+}
+
+#message-box-stage .message-box-title {
+    font-size:18px;
+    margin:5px 0;
+    line-height:22px;
+    text-align:center;
+    width:100%;
+}
+
+#message-box-stage .message-box-message {
+    font-size:12px;
+    text-align:center;
+    width:100%;
+}
+
+#message-box-stage .message-box-message p {
+    margin:0;
+    padding:5px 0 0 0;
+}
+
+#message-box-stage .message-box-button-holder {
+    margin:auto;
+    overflow:hidden;
+    padding-top:15px;
+}
+
+#message-box-stage .message-box-button {
+    background-color:#fff;
+    cursor:pointer;
+    filter:alpha( opacity = 33 );
+    float:left;
+    margin-right:10px;
+    opacity:0.33;
+    padding:2px 4px 4px 4px;
+    text-align:center;
+    width:50px;
+    -khtml-opacity:0.33;
+    -moz-opacity:0.33;
+}
+
+#message-box-stage .message-box-button:hover {
+    background-color:#0ff;
+    color:#fff;
+    cursor:pointer;
+    filter:alpha( opacity = 66 );
+    float:left;
+    font-weight:bold;
+    margin-right:10px;
+    opacity:0.66;
+    padding:2px 4px 4px 4px;
+    width:50px;
+    -khtml-opacity:0.66;
+    -moz-opacity:0.66;    
+}
+
+#default-message-box-types {
+    display:none;
+}

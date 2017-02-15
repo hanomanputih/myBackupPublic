@@ -1,0 +1,63 @@
+<html {$html_attrs}>
+<head>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block {width:35%;margin:0 auto;min-width:300px}
+#header_block {padding:2px 5px 6px;line-height: 1.8}
+#main_block {padding:10px 0 5px 0;}
+#inmain_block {margin:0 10px}
+#tables_block {width:auto;margin:0;padding:10px;}
+#tables_block li {list-style-type:none}
+#header_block > span {margin:2px 5px}
+.captions {padding:6px 10px;}
+</style>
+<!--[if IE]>
+<style>
+#main_block {padding:10px 10px 5px 10px;}
+#inmain_block {margin:0 0px;width:100%}
+#header_block span {margin:5px 5px}
+</style>
+<![endif]-->
+</head>
+<body>
+{BEGIN body}
+{$header}
+<table align=center id="center_block"><tr><td id="contents_block">
+<b class="xtop"><b class="rb1 rb1_top"></b><b class="rb2 rb2_top"></b><b class="rb3 rb3_top"></b><b class="rb4 rb4_top"></b></b>
+<div id="header_block" class="top">
+{BEGIN loggedas_block}
+<span>Anda login sebagai&nbsp;<b><font color=#FCFAEA>{$username}</font></b></span>
+{END loggedas_block}
+{BEGIN logout_link}
+<span class=buttonborder><input class=button type=button value="Logout" {$logoutlink_attrs}></span>
+{END logout_link}
+{BEGIN changepwd_link}
+<span class=buttonborder><input class=button type=button value="Rubah password" {$changepwdlink_attrs}></span>
+{END changepwd_link}
+</div>
+<div id="main_block" class="xboxcontentb">
+<div id="inmain_block" class="xboxcontentb">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div id="tables_block" class="xboxcontent" >
+<!-- MainMenuBegin -->
+{$mainmenu}
+<!-- MainMenuEnd -->	
+{BEGIN adminarea_link}
+<div>
+<hr><a  href="admin_rights_list.php" class="menuhref captions" {$adminarealink_attrs}>Admin Area</a>
+</div>
+{END adminarea_link}
+
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+{$footer}
+{END body}
+</body>
+</html>

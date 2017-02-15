@@ -1,0 +1,26 @@
+Hadir<br>
+Detail ditemukan: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Displaying first: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Agenda</strong></td>
+<td><strong>Instansi</strong></td>
+<td><strong>Petugas</strong></td>
+<td><strong>Jabatan</strong></td>
+<td><strong>Jam entri</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_agenda_value}</td>
+<td>{$Instansi_value}</td>
+<td>{$id_bos_value}</td>
+<td>{$Jabatan_value}</td>
+<td>{$Jam_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

@@ -1,0 +1,350 @@
+/* 
+    Document   : element
+    Created on : Sep 27, 2012, 6:29:11 PM
+    Author     : Rifkan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.with-padding{
+    padding : 10px;
+}
+
+input[type=text], input[type=password], textarea{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #BBBBBB;
+    height: 20px;
+    color: #666666;
+    -webkit-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+    -moz-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+    box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+    padding-left: 10px;
+    background-position: 10px 6px;
+    margin: 0;
+    display: block;
+    float: left;
+    width: 96%;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus{
+    outline: none;
+    border: 1px solid #77BACE;
+    -webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+    -moz-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+    box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+}
+
+input[type=submit].button_active{
+    background: #87BA17 url(../../images/bg_green-gradient.png) repeat-x;
+    background: -webkit-linear-gradient(top, #A7CF34, #87BA17);
+    background: -moz-linear-gradient(top, #A7CF34, #87BA17);
+    background: -ms-linear-gradient(top, #A7CF34, #87BA17);
+    background: -o-linear-gradient(top, #A7CF34, #87BA17);
+    background: linear-gradient(top, #A7CF34, #87BA17);
+    width: 75px;
+    border: 1px solid #6D960C;
+    color: white;
+    text-shadow: 0 1px 0 rgb(94,177,43);
+}
+input[type=submit].button_active:hover{
+    background: #87BA17 url(../../images/bg_green-gradient_hover.png) repeat-x;
+}
+
+input[type=submit].button_inactive{
+    background: #D52607 url(../../images/bg_red-gradient.png) repeat-x;
+    background: -webkit-linear-gradient(top, #EB671D, #D12206);
+    background: -moz-linear-gradient(top, #EB671D, #D12206);
+    background: -ms-linear-gradient(top, #EB671D, #D12206);
+    background: -o-linear-gradient(top, #EB671D, #D12206);
+    background: linear-gradient(top, #EB671D, #D12206);
+    width: 75px;
+    border: 1px solid #931A03;
+    color: white;
+    text-shadow: 0 1px 0 rgb(220,77,53);
+}
+input[type=submit].button_inactive:hover{
+    background: #D52607 url("../../images/bg_red_gradient_hover.png") repeat-x;
+}
+
+.right-float{
+    float: right;
+}
+
+.left-float{
+    float: left;
+}
+
+input.ten-radius{
+    background: #fff url(../images/icn_search.png) no-repeat;
+    text-align: left;
+    background-position: 5px 4px;
+    padding-left: 5%;
+    text-indent: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #ccc;
+}
+
+input.ten-radius:focus{
+    color: black;
+}
+
+.no-data{
+    color: rgb(255,0,0);
+    font-weight: bold;
+}
+
+.title-case{
+    text-transform: capitalize;
+}
+
+.select{
+    border: 1px solid #BBBBBB;
+    background-color: rgb(244,245,247);
+    height: 23px;
+    width: 120px;
+    
+    -webkit-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+    -moz-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+    box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+}
+
+.select:focus{
+    outline: none;
+    border: 1px solid #77BACE;
+    -webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+    -moz-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+    box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
+}
+
+.full{
+    width: 100%;
+}
+
+.list-kelas{
+    margin-top: -5px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgb(213,220,229);
+}
+.data-kelas{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.data-kelas a{
+    color: black;
+}
+.data-kelas a:hover{
+    color: rgb(130,185,204);
+    text-decoration: none;
+}
+.data-kelas .active{
+    color: rgb(130,185,204);
+    font-weight: bold;
+}
+.data-kelas .no-data{
+    color: rgb(255,0,0);
+}
+
+.count{
+    margin-top: -25px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.list li{
+    padding-bottom: 5px;
+}
+
+.space{
+    padding: 20px;
+    margin: 20px;
+}
+.wisiwig{
+    padding: 10px;
+}    
+.wisiwig textarea{
+    width: 98%;
+}
+
+.red-color{
+    color: rgb(255,0,0);
+}
+
+.twenty-right-padding{
+    padding-right: 20px;
+}
+input.five-margin{
+    margin: 5px 0px;
+}
+.detail{
+    background: rgb(240,240,243);
+}
+.add-form{
+    width: 300px;
+    padding: 5px 5px 5px 25px;
+}
+
+
+#mask {
+    display: none;
+    background: #000; 
+    position: fixed; left: 0; top: 0; 
+    z-index: 10;
+    width: 100%; height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.login-popup{
+    display:none;
+    background: #333;
+    padding: 10px;  
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999;
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+.close_btn{
+    float: right;
+    margin-top: -5px;
+    margin-right: 0px;
+}
+.content{
+    margin-top: 15px;
+    padding: 10px 10px 10px 5px;
+    width: 300px;
+    height: px;
+    background-color: white;
+}
+.content input{
+    margin: 5px 0px 5px 0px;
+}
+.yellow-alert   {
+    background: rgb(249,221,126);
+    border: 1px solid #e79300;
+    color: rgb(150,100,0);
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    }
+.red-alert    {
+    background: #F3D9D9;
+    border: 1px solid #D20009;
+    color: #7B040F;
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    }
+.green-alert    {
+    background: #E2F6C5;
+    border: 1px solid #79C20D;
+    color: #32510F;
+    font-family: Tahoma;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    }
+
+header span{
+    position: relative;
+    top: -22px;
+    font-weight: bold;
+    float: right;
+    margin-right: 15px;
+
+}
+
+.readonly{
+    background-color: rgb(230,230,230);
+}
+
+.horison-padding{
+    padding-left : 10px;
+    padding-right : 10px;
+}
+
+.vertical-padding{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bg-gray{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.list-table td{
+    padding: 5px;
+    border-bottom: 1px dotted lightgray;
+}
+
+.green{
+    color: rgb(119,182,83);
+}
+.red{
+    color: rgb(215,60,53);
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+

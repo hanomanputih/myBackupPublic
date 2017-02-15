@@ -1,0 +1,110 @@
+<html {$html_attrs}>
+<head><title>Laporan</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {width:auto;margin:0 auto;min-width:500px;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:31px;padding-top:5px;}
+#main_block{$id} {padding:10px 0;width:100%}
+#inmain_block{$id} {margin:0 10px}
+#fields_block{$id} {width:100%;mrgin-top:10px;}
+#buttons_block{$id} {width:100%;padding-bottom:5px}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px}
+#span{$id} {margin:0 20px 0 20px;}
+</style>
+<!--[if IE]>
+<style>
+#main_block {padding:10px 10;}
+#fields_block{$id} {width:auto;}
+#inmain_block {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body>
+{BEGIN body}
+{$header}
+{BEGIN editForm}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="rb1 rb1_top"></b><b class="rb2 rb2_top"></b><b class="rb3 rb3_top"></b><b class="rb4 rb4_top"></b></b>
+<div id="header_block{$id}" class="top">
+Laporan, Edit record [
+No: {$show_key1}
+]
+</div>
+<div id="main_block{$id}" class="xboxcontentb" >
+<div id="inmain_block{$id}" class="xboxcontentb" >
+{BEGIN message_block}
+<div id="message_block{$id}" class="downedit">{$message}</div>
+{END message_block}
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+
+{BEGIN id_hadir_fieldblock}
+<tr>
+    <td class=editshadeleft_b width=150 style="padding-left:15px;">
+{BEGIN id_hadir_label}Petugas{END id_hadir_label}
+</td>
+    <td width=250 class=editshaderight_lb style="padding-left:10px;">
+    {$id_hadir_editcontrol}
+  </td></tr>
+{END id_hadir_fieldblock}
+{BEGIN Hasil_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Laporan Kegiatan</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Hasil_editcontrol}
+  </td></tr>
+{END Hasil_fieldblock}
+{BEGIN Catatan_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Catatan penting</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Catatan_editcontrol}
+  </td></tr>
+{END Catatan_fieldblock}
+{BEGIN Naskah_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Naskah Digital</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Naskah_editcontrol}
+  </td></tr>
+{END Naskah_fieldblock}
+</table>
+<div class="downedit2" id="buttons_block{$id}">
+{BEGIN legend}
+ <div id="required_block{$id}" ><img alt="bullet" src="images/icon_required.gif"> - Field harus diisi</div>
+ {END legend}
+ {$legendBreak}
+{BEGIN save_button}
+ <span class=buttonborder><input id="savebutton{$id}" class=button type=submit value="Simpan" {$savebutton_attrs}></span>
+{END save_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=reset value="Reset" {$resetbutton_attrs}></span>
+{END reset_button}
+<span id="span{$id}">&nbsp;</span>
+{BEGIN prev_button}
+ <span class=buttonborder><input id="prev{$id}" class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Kembali" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input id="next{$id}" class=button type=reset value=" >>> " {$nextbutton_attrs}></span>
+{END next_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+{END editForm}
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

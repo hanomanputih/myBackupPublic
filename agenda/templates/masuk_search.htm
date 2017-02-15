@@ -1,0 +1,179 @@
+<html {$html_attrs}>
+<head>
+<title>Surat Masuk: Halaman pencarian detail</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:31px;padding-top:5px;}
+#main_block{$id} {padding:10px 0;width:100%}
+#inmain_block{$id} {margin:0 10px}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {width:100%;padding:10px 0 5px 0;}
+#buttons_block{$id} > * {margin:0 2px}
+</style>
+<!--[if IE]>
+<style>
+#main_block{$id} {padding:10px 10;}
+#inmain_block{$id} {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body bgcolor=white>
+{BEGIN body}
+{$header}	
+{BEGIN contents_block}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="rb1 rb1_top"></b><b class="rb2 rb2_top"></b><b class="rb3 rb3_top"></b><b class="rb4 rb4_top"></b></b>
+<div id="header_block{$id}" class="top">
+Surat Masuk - Pencarian detail</div>
+<div id="main_block{$id}" class="xboxcontentb" >
+<div id="inmain_block{$id}" class="xboxcontentb" >
+	
+{BEGIN conditions_block}
+<DIV id="conditions_block{$id}">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" style="width:100%">
+<span class=fieldname>Cari:</span>
+<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}Semua Kondisi{END all_checkbox_label}
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Kondisi apapun{END any_checkbox_label}
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+<br>
+</DIV>
+{END conditions_block}
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+<tr valign=center>
+<td align=center valign=middle class="searchlist_left">&nbsp;</td>
+<td width=30 align=center valign=middle class=searchlist>NOT</td>
+<td align=center valign=middle class="searchlist">&nbsp; </td>
+<td align=center valign=middle class="searchlist">&nbsp; </td>
+<td align=center valign=middle class="searchlist_right">&nbsp; </td></tr>
+{BEGIN Indeks_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Indeks</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$Indeks_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_Indeks}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Indeks_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Indeks_editcontrol1}&nbsp;</td>
+</tr>
+{END Indeks_fieldblock}	
+{BEGIN KodeSurat_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Kode Surat</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$KodeSurat_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_KodeSurat}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$KodeSurat_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$KodeSurat_editcontrol1}&nbsp;</td>
+</tr>
+{END KodeSurat_fieldblock}	
+{BEGIN NoUrut_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Nomor Urut</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$NoUrut_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_NoUrut}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$NoUrut_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$NoUrut_editcontrol1}&nbsp;</td>
+</tr>
+{END NoUrut_fieldblock}	
+{BEGIN IsiRingkas_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Isi Ringkas</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$IsiRingkas_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_IsiRingkas}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$IsiRingkas_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$IsiRingkas_editcontrol1}&nbsp;</td>
+</tr>
+{END IsiRingkas_fieldblock}	
+{BEGIN Dari_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Dari</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$Dari_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_Dari}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Dari_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Dari_editcontrol1}&nbsp;</td>
+</tr>
+{END Dari_fieldblock}	
+{BEGIN TglSurat_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Tanggal Surat</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$TglSurat_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_TglSurat}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$TglSurat_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$TglSurat_editcontrol1}&nbsp;</td>
+</tr>
+{END TglSurat_fieldblock}	
+{BEGIN NoSurat_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Nomor Surat</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$NoSurat_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_NoSurat}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$NoSurat_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$NoSurat_editcontrol1}&nbsp;</td>
+</tr>
+{END NoSurat_fieldblock}	
+{BEGIN Pengolah_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Pengolah</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$Pengolah_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_Pengolah}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Pengolah_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Pengolah_editcontrol1}&nbsp;</td>
+</tr>
+{END Pengolah_fieldblock}	
+{BEGIN TglDiteruskan_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Tanggal diteruskan</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$TglDiteruskan_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_TglDiteruskan}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$TglDiteruskan_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$TglDiteruskan_editcontrol1}&nbsp;</td>
+</tr>
+{END TglDiteruskan_fieldblock}	
+{BEGIN prop_fieldblock}	
+<tr>
+	<td class=editshade_b style="padding-left:15px;">Prop</td>
+	<td align=center class=editshade_lb style="padding-left:10px;"><input type=checkbox {$prop_notbox}></td>
+	
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_prop}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$prop_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$prop_editcontrol1}&nbsp;</td>
+</tr>
+{END prop_fieldblock}	
+</table>
+
+<div class="downedit2" id="buttons_block{$id}">
+{BEGIN search_button}
+ <span class=buttonborder><input class=button type=button value="Cari" {$searchbutton_attrs}></span>
+{END search_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=button value="Reset" {$resetbutton_attrs}></span>
+{END reset_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Kembali" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+{END contents_block}
+{$footer}
+{END body}
+</body>
+</html>
+	

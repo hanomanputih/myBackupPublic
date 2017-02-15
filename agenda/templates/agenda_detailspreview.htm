@@ -1,0 +1,30 @@
+Agenda<br>
+Detail ditemukan: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Displaying first: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Surat Masuk</strong></td>
+<td><strong>Agenda</strong></td>
+<td><strong>Mulai Tanggal</strong></td>
+<td><strong>Jam</strong></td>
+<td><strong>Berakhir Tanggal</strong></td>
+<td><strong>Jam</strong></td>
+<td><strong>Tempat</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_masuk_value}</td>
+<td>{$Apa_value}</td>
+<td>{$Tgl_mulai_value}</td>
+<td>{$Jam_mulai_value}</td>
+<td>{$Tgl_akhir_value}</td>
+<td>{$Jam_akhir_value}</td>
+<td>{$Tempat_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

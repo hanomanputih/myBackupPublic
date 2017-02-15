@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Surat Masuk</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{BEGIN style_block}<STYLE>
+#height100{$id} {padding:10px;}
+#toplinks_block{$id} {padding:2px 5px}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#menu_block{$id} {clear:left;margin-top:10px;}
+#menu_block{$id} div {{BEGIN RTL_block}float:right;{END RTL_block}{BEGIN LTR_block}float:left;{END LTR_block}}
+#menu_block{$id} div div {margin-right:1px;float:none;}
+#menu_block{$id} a {white-space:nowrap;}
+#search_records_block{$id} {padding:9px 10px 13px 10px;text-align:right}
+#search_records_block{$id} > * {margin:2px 2px;vertical-align:middle}
+#detFound{$id}, #pageOf{$id} {white-space:nowrap}
+#recordcontrols_block{$id} {padding:13px 10px 9px 10px;text-align:right}
+#recordcontrols{$id} > *,#newrecordcontrols{$id} > * {margin:2px 2px;vertical-align:middle}
+#search_records_top{$id} {{BEGIN RTL_block}clear:right;{END RTL_block}{BEGIN LTR_block}clear:left;{END LTR_block}}
+#message_block{$id} {text-align:center;}
+#grid_block{$id} {margin-top:10px;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader * {margin:0px 5px; vertical-align:middle}
+#mastertable_block{$id} {margin:10px 0}
+#searchOptions{$id}{
+	margin-right: 10px;
+	padding-bottom: 18px;
+}
+#searchPanelBottomRound{$id}{
+	/*margin-right: 10px !important;*/
+}
+#searchform{$id}{
+	float: left; 
+}
+#searchPanelContainer{$id}{
+	width: 200px;
+	margin-top:10px;
+	display: block; 
+	float: none;
+	position:absolute;
+}
+body{margin:0px;padding:0px;}
+
+/*report styles*/
+
+
+#export_links{$id} * {padding:0}
+</STYLE>
+{END style_block}<!--[if IE]>{BEGIN iestyle_block}<STYLE>
+#toplinks_block{$id} * {margin:2px 3px;vertical-align:middle;}
+#search_records_block{$id} * {margin:1px 1px;vertical-align:middle}
+#recordcontrols{$id} *, #newrecordcontrols{$id} * {margin:1x 1px;vertical-align:middle}
+</STYLE>
+{END iestyle_block}<![endif]-->
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY {$bodyattrs} marginwidth="0" marginheight="0">{BEGIN body}<DIV id="height100{$id}">{$header} 
+{BEGIN toplinks_block}<DIV><B class=xtop><B class="rb1 rb1_top"></B><B 
+class="rb2 rb2_top"></B><B class="rb3 rb3_top"></B><B 
+class="rb4 rb4_top"></B></B>
+<DIV class=top id="toplinks_block{$id}"><SPAN><FONT 
+style="FONT-FAMILY: Verdana, Arial">Anda login sebagai</FONT>&nbsp;<B>{$username}</B>&nbsp;</SPAN> 
+<SPAN class=buttonborder><INPUT class=button type=button value=Logout {$logoutlink_attrs}></SPAN> 
+{BEGIN adminarea_link}<SPAN class=buttonborder><INPUT class=button type=button value="Admin Area" {$adminarealink_attrs}></SPAN>{END adminarea_link} 
+{BEGIN changepwd_link}<SPAN class=buttonborder><INPUT class=button type=button value="Rubah password" {$changepwdlink_attrs}></SPAN>{END changepwd_link} 
+{BEGIN asearch_link}<SPAN class=buttonborder><INPUT class=button type=button value="Pencarian detail" {$asearchlink_attrs}></SPAN>{END asearch_link} 
+</DIV><B class=xbottom><B class="rb4 rb4_top"></B><B class="rb3 rb3_top"></B><B 
+class="rb2 rb2_top"></B><B class="rb1 rb1_top"></B></B></DIV>{END toplinks_block}<!-- MenuBegin -->{BEGIN menu_block}<div id="menu_block{$id}" ><!-- MainMenuBegin -->
+{$mainmenu horizontal}
+<!-- MainMenuEnd -->	
+</div>
+{END menu_block}
+
+<!-- MenuEnd -->
+{BEGIN search_records_block}<DIV id="search_records_top{$id}"><B 
+class="rb2 rb2_search"></B><B class="rb3 rb3_search"></B><B 
+class="rb4 rb4_search"></B>
+<DIV class=main_table_border_P id="search_records_block{$id}">{BEGIN searchform}<!-- Search panel header for horizontal layouts --><SPAN id="searchform{$id}" align="absmiddle"><SPAN id="searchPanelHeader{$id}">{$simpleSearchTypeCombo} 
+{$simpleSearchFieldCombo} 
+{BEGIN searchform_text}<INPUT size=25 {$searchfor_attrs}>{END searchform_text} &nbsp; {BEGIN searchform_search}<SPAN class=buttonborder><INPUT class=button style="BACKGROUND-IMAGE: url(images/search/search.gif); WIDTH: 18px" type=button {$searchbutton_attrs}></SPAN>{END searchform_search} 
+&nbsp; {BEGIN searchform_showall}<SPAN class=buttonborder id="showall{$id}"><INPUT class=button type=button value="Tampil semua" {$showallbutton_attrs}></SPAN>{END searchform_showall} 
+</SPAN>{BEGIN searchPanelTopButtons}<SPAN>&nbsp; <SPAN class=buttonborder><INPUT class=button id="showSrchWin{$id}" style="BACKGROUND-IMAGE: url(images/search/showWindowPin.gif); WIDTH: 18px" type=button {$showHideSearchWin_attrs}></SPAN> 
+&nbsp; <SPAN class=buttonborder><INPUT class=button id="showOptPanel{$id}" style="BACKGROUND-IMAGE: url(images/search/showOptions.gif); WIDTH: 18px" type=button {$showHideSearchPanel_attrs}></SPAN> 
+</SPAN>{END searchPanelTopButtons}</SPAN>{END searchform}
+<DIV style="DISPLAY: inline">&nbsp;&nbsp;&nbsp; {BEGIN details_block}<SPAN id="detFound{$id}">Detail ditemukan: {$records_found}&nbsp;</SPAN>{END details_block} 
+{BEGIN pages_block}<SPAN id="pageOf{$id}">Halaman {$page} 
+dari {$maxpages}</SPAN>{END pages_block} 
+&nbsp;&nbsp;&nbsp; {BEGIN recordspp_block}<SPAN id="recordspp_block{$id}">Jumlah record per halaman: <SELECT 
+  {$recordspp_attrs}><option value="10" {$rpp10_selected}>10</OPTION> <option value="20" {$rpp20_selected}>20</OPTION> <option value="30" {$rpp30_selected}>30</OPTION> <option value="50" {$rpp50_selected}>50</OPTION> <option value="100" {$rpp100_selected}>100</OPTION> <option value="500" {$rpp500_selected}>500</OPTION></SELECT> </SPAN>{END recordspp_block}</DIV></DIV></DIV>{END search_records_block}<!-- search panel and window -->
+<DIV class=searchPanelContainer id="searchPanelContainer{$id}">{$adv_search_panel} 
+</DIV><B class=xbottom id="searchPanelBottomRound{$id}" {$searchPanelBottomRound_attrs}><B class="rb4 rb4_panel"></B><B 
+class="rb3 rb3_panel"></B><B class="rb2 rb2_panel"></B><B 
+class="rb1 rb1_panel"></B></B>
+<DIV {$marginStyle} moveForSearch="move{$id}">{BEGIN recordcontrols_block}<DIV class=body3 id="recordcontrols_block{$id}">{BEGIN record_controls}<SPAN id="record_controls{$id}"></SPAN>{END record_controls}</DIV><B 
+class=xbottom><B class="rb4 rb4_controls"></B><B class="rb3 rb3_controls"></B><B 
+class="rb2 rb2_controls"></B><B class="rb1 rb1_controls"></B></B>{END recordcontrols_block}
+<DIV class=message id="usermessage{$id}">{$user_message}</DIV>
+{BEGIN grid_block}<DIV id="grid_block{$id}"><TABLE class=data cellSpacing=0 cellPadding=3 border=0 name="maintable">{BEGIN grid_header}<THEAD><TR class=blackshade vAlign=top {$gridHeader_attrs}>{BEGIN record_header}<TH class=headerlist_left_gif_P width=5>&nbsp;</TH>
+    {BEGIN listIcons_column}<TH class=headerlist noWrap align=middle {$widthListIcons}>&nbsp;</TH>{END listIcons_column}
+    {BEGIN masuk_dtable_column}<TH class=headerlist align=middle width=100>&nbsp;</TH>{END masuk_dtable_column}
+    {BEGIN Indeks_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN Indeks_fieldheader}&nbsp; <A class=tablelinks 
+      {$Indeks_orderlinkattrs}>Indeks</A> &nbsp; {END Indeks_fieldheader}</TH>{END Indeks_fieldheadercolumn}
+    {BEGIN KodeSurat_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN KodeSurat_fieldheader}&nbsp; <A class=tablelinks 
+      {$KodeSurat_orderlinkattrs}>Kode Surat</A> &nbsp; {END KodeSurat_fieldheader}</TH>{END KodeSurat_fieldheadercolumn}
+    {BEGIN NoUrut_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN NoUrut_fieldheader}&nbsp; <A class=tablelinks 
+      {$NoUrut_orderlinkattrs}>Nomor Urut</A> &nbsp; {END NoUrut_fieldheader}</TH>{END NoUrut_fieldheadercolumn}
+    {BEGIN IsiRingkas_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN IsiRingkas_fieldheader}&nbsp; <A class=tablelinks 
+      {$IsiRingkas_orderlinkattrs}>Isi Ringkas</A> &nbsp; {END IsiRingkas_fieldheader}</TH>{END IsiRingkas_fieldheadercolumn}
+    {BEGIN Dari_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN Dari_fieldheader}&nbsp; <A class=tablelinks 
+      {$Dari_orderlinkattrs}>Dari</A> &nbsp; {END Dari_fieldheader}</TH>{END Dari_fieldheadercolumn}
+    {BEGIN TglSurat_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN TglSurat_fieldheader}&nbsp; <A class=tablelinks 
+      {$TglSurat_orderlinkattrs}>Tanggal Surat</A> &nbsp; {END TglSurat_fieldheader}</TH>{END TglSurat_fieldheadercolumn}
+    {BEGIN NoSurat_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN NoSurat_fieldheader}&nbsp; <A class=tablelinks 
+      {$NoSurat_orderlinkattrs}>Nomor Surat</A> &nbsp; {END NoSurat_fieldheader}</TH>{END NoSurat_fieldheadercolumn}
+    {BEGIN Pengolah_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN Pengolah_fieldheader}&nbsp; <A class=tablelinks 
+      {$Pengolah_orderlinkattrs}>Pengolah</A> &nbsp; {END Pengolah_fieldheader}</TH>{END Pengolah_fieldheadercolumn}
+    {BEGIN TglDiteruskan_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN TglDiteruskan_fieldheader}&nbsp; <A class=tablelinks 
+      {$TglDiteruskan_orderlinkattrs}>Tanggal diteruskan</A> &nbsp; {END TglDiteruskan_fieldheader}</TH>{END TglDiteruskan_fieldheadercolumn}
+    {BEGIN prop_fieldheadercolumn}<TH class=headerlist_right2 align=middle>{BEGIN prop_fieldheader}&nbsp; <A class=tablelinks 
+      {$prop_orderlinkattrs}>Prop</A> &nbsp; {END prop_fieldheader}</TH>{END prop_fieldheadercolumn}
+    <TH class=headerlist_right_gif_P>&nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class=body2></TH>{END endrecordheader_block}{END record_header}</TR></THEAD>{END grid_header}
+  {BEGIN grid_row}<TR vAlign=top {$rowattrs} {$rowstyle}>{BEGIN grid_record}<TD width=5>&nbsp;</TD>
+    {BEGIN listIcons_column}<TD class="borderbody listIcons" vAlign=middle noWrap align=middle></TD>{END listIcons_column}
+    {BEGIN masuk_dtable_column}<TD class=borderbody vAlign=middle align=left>{BEGIN agenda_dtable_link}<A {$agenda_dtablelink_attrs}>Agenda <SPAN {$agenda_childnumber_attr}>{BEGIN agenda_childcount}({$agenda_childnumber}){END agenda_childcount}</SPAN> 
+      </A><BR>{END agenda_dtable_link}</TD>{END masuk_dtable_column}
+    {BEGIN Indeks_fieldcolumn}<TD class=borderbody vAlign=middle {$Indeks_style}><STRONG><FONT color=#ff0000>{$Indeks_value}</FONT></STRONG> </TD>{END Indeks_fieldcolumn}
+    {BEGIN KodeSurat_fieldcolumn}<TD class=borderbody vAlign=middle {$KodeSurat_style}>{$KodeSurat_value} </TD>{END KodeSurat_fieldcolumn}
+    {BEGIN NoUrut_fieldcolumn}<TD class=borderbody vAlign=middle {$NoUrut_style}><STRONG>{$NoUrut_value}</STRONG> </TD>{END NoUrut_fieldcolumn}
+    {BEGIN IsiRingkas_fieldcolumn}<TD class=borderbody vAlign=middle {$IsiRingkas_style}><FONT color=#0000ff><EM>{$IsiRingkas_value}</EM></FONT> </TD>{END IsiRingkas_fieldcolumn}
+    {BEGIN Dari_fieldcolumn}<TD class=borderbody vAlign=middle {$Dari_style}><STRONG><FONT color=#ff0000>{$Dari_value}</FONT></STRONG> </TD>{END Dari_fieldcolumn}
+    {BEGIN TglSurat_fieldcolumn}<TD class=borderbody vAlign=middle {$TglSurat_style}>{$TglSurat_value} </TD>{END TglSurat_fieldcolumn}
+    {BEGIN NoSurat_fieldcolumn}<TD class=borderbody vAlign=middle {$NoSurat_style}><STRONG><EM>{$NoSurat_value}</EM></STRONG> </TD>{END NoSurat_fieldcolumn}
+    {BEGIN Pengolah_fieldcolumn}<TD class=borderbody vAlign=middle {$Pengolah_style}><FONT color=#0000ff><STRONG>{$Pengolah_value}</STRONG></FONT> </TD>{END Pengolah_fieldcolumn}
+    {BEGIN TglDiteruskan_fieldcolumn}<TD class=borderbody vAlign=middle {$TglDiteruskan_style}><EM><STRONG>{$TglDiteruskan_value}</STRONG></EM> </TD>{END TglDiteruskan_fieldcolumn}
+    {BEGIN prop_fieldcolumn}<TD vAlign=middle {$prop_style}>{$prop_value} </TD>{END prop_fieldcolumn}
+    <TD>&nbsp;</TD>
+    {BEGIN endrecord_block}<TD class=body2 width=20 {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}{BEGIN grid_footer}<TR class=blackshade>{BEGIN record_footer}<TD class=headerlistdown_left2_P height=15></TD>
+    {BEGIN listIcons_column}<TD class=blackshade noWrap>&nbsp;</TD>{END listIcons_column}
+    {BEGIN masuk_dtable_column}<TD class=blackshade>&nbsp;</TD>{END masuk_dtable_column}
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=blackshade>&nbsp;</TD>
+    <TD class=headerlistdown_right2_P height=15>&nbsp;</TD>
+    {BEGIN endrecordfooter_block}<TD class=body2 width=20>&nbsp;</TD>{END endrecordfooter_block}{END record_footer}</TR></TFOOT>{END grid_footer}</TABLE></DIV>{END grid_block}</DIV>
+{BEGIN pagination_block}<DIV><B class=xtop><B class=xb1></B><B 
+class=xb2></B><B class=xb3></B><B class=xb4></B></B>
+<DIV class=xboxcontent id="pagination_block{$id}">{$pagination}</DIV><B 
+class=xbottom><B class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+class=xb1></B></B></DIV>{END pagination_block}
+{BEGIN message_block}<DIV><B class=xtop><B class=xb1></B><B class=xb2></B><B 
+class=xb3></B><B class=xb4></B></B>
+<DIV class=xboxcontent id=message_block>{$message}</DIV><B 
+class=xbottom><B class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+class=xb1></B></B></DIV>{END message_block}{$footer} </DIV>{END body}</BODY></HTML>

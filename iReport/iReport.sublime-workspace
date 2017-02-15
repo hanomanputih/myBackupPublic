@@ -1,0 +1,1375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"member",
+				"member"
+			],
+			[
+				"get_user",
+				"get_user_meta"
+			],
+			[
+				"get",
+				"get_user_meta"
+			],
+			[
+				"data",
+				"data_send"
+			],
+			[
+				"colordark",
+				"colorDarkBlue"
+			],
+			[
+				"de",
+				"decode_schedule"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"all",
+				"all_schedule"
+			],
+			[
+				"daa",
+				"data_send"
+			],
+			[
+				"sch",
+				"schedule"
+			],
+			[
+				"sche",
+				"schedule_value"
+			],
+			[
+				"prima",
+				"primary_field"
+			],
+			[
+				"rel",
+				"related_field"
+			],
+			[
+				"rela",
+				"related_tb"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"use",
+				"useLandscape"
+			],
+			[
+				"insert",
+				"insert"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"rad",
+				"radio"
+			],
+			[
+				"post",
+				"post_array"
+			],
+			[
+				"temp",
+				"temp_time"
+			],
+			[
+				"genera",
+				"generation_idx"
+			],
+			[
+				"generations",
+				"generations"
+			],
+			[
+				"modal",
+				"modalTop"
+			],
+			[
+				"artist",
+				"artists"
+			],
+			[
+				"window",
+				"window"
+			],
+			[
+				"or",
+				"orientation"
+			],
+			[
+				"home",
+				"homeID"
+			],
+			[
+				"pic",
+				"pic_location"
+			],
+			[
+				"ho",
+				"homeID"
+			],
+			[
+				"Compl",
+				"completed"
+			],
+			[
+				"text",
+				"textfield"
+			],
+			[
+				"pos",
+				"post_brochure"
+			],
+			[
+				"post_i",
+				"post_ID"
+			],
+			[
+				"post_sub",
+				"post_subcontent"
+			],
+			[
+				"post_su",
+				"post_subtitle"
+			],
+			[
+				"bas",
+				"base"
+			],
+			[
+				"post_con",
+				"post_content"
+			],
+			[
+				"is",
+				"is_fatured"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"read",
+				"readyState"
+			],
+			[
+				"tern",
+				"terms-conditions-container"
+			],
+			[
+				"page",
+				"pageID"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"tma",
+				"tampilarmada"
+			],
+			[
+				"defin",
+				"defined"
+			],
+			[
+				"data_to_",
+				"data_to_send"
+			],
+			[
+				"data_to",
+				"data_to_send"
+			],
+			[
+				"dire",
+				"directory_temp"
+			],
+			[
+				"folder",
+				"folder_temp"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"di",
+				"directory"
+			],
+			[
+				"field",
+				"field_name"
+			],
+			[
+				"table",
+				"table_name"
+			],
+			[
+				"false",
+				"false"
+			],
+			[
+				"pk",
+				"pk_field"
+			],
+			[
+				"get_ty",
+				"get_types_field_table"
+			],
+			[
+				"primary",
+				"primary_key"
+			],
+			[
+				"prim",
+				"primary_keys"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"remove",
+				"removeErrorMsgOnIphone"
+			],
+			[
+				"showErr",
+				"showErrorMsgOnIphone"
+			],
+			[
+				"mo",
+				"mobile"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"extime",
+				"extimesFormat"
+			],
+			[
+				"expire",
+				"expiresTime"
+			],
+			[
+				"extim",
+				"extimesFormat"
+			],
+			[
+				"exti",
+				"extimesFormat"
+			],
+			[
+				"goth",
+				"GothamBoldRegular"
+			],
+			[
+				"mobile",
+				"mobileInsertHTML"
+			],
+			[
+				"user",
+				"userAgent"
+			],
+			[
+				"isip",
+				"isIphone"
+			],
+			[
+				"Got",
+				"GothamBookRegular"
+			],
+			[
+				"dta",
+				"datatoget"
+			],
+			[
+				"datato",
+				"datatocheck"
+			],
+			[
+				"kriter",
+				"kriteria_meta"
+			],
+			[
+				"kriteria",
+				"kriteria"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"datat",
+				"datatosave"
+			],
+			[
+				"resu",
+				"resultX"
+			],
+			[
+				"resul",
+				"resultY"
+			],
+			[
+				"isi",
+				"isIphone"
+			],
+			[
+				"sk",
+				"skeletonpagecontainer"
+			],
+			[
+				"term",
+				"terms-conditions-container"
+			],
+			[
+				"swi",
+				"swipe-wrap"
+			],
+			[
+				"img",
+				"image_home"
+			],
+			[
+				"image",
+				"image_home"
+			],
+			[
+				"tabe",
+				"table-cell"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"skele",
+				"skeletonbodycontainer"
+			],
+			[
+				"bAse",
+				"BASE_URL"
+			],
+			[
+				"skeleto",
+				"skeletonpagecontainer"
+			],
+			[
+				"upda",
+				"cssUpdateIphone"
+			],
+			[
+				"Use",
+				"useNiceScroll"
+			],
+			[
+				"pag",
+				"page"
+			],
+			[
+				"css",
+				"cssUpdateIphone"
+			],
+			[
+				"li",
+				"list-locations"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"Go",
+				"GothamBookRegular"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"list-",
+				"list-style-image"
+			],
+			[
+				"p",
+				"pagecontainer"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"ipho",
+				"iPhone"
+			],
+			[
+				"ge",
+				"getUrl"
+			],
+			[
+				"curre",
+				"currentURL"
+			],
+			[
+				"side",
+				"side-left"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"base",
+				"BASE_URL"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"swipe",
+				"swipeController"
+			],
+			[
+				"swip",
+				"swipeController"
+			],
+			[
+				"back",
+				"backstretch"
+			],
+			[
+				"pagecon",
+				"pagecontainer"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"menu",
+				"menuContent"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"skeleton",
+				"skeletonBodyContainer"
+			],
+			[
+				"append",
+				"iphoneAppendHTML"
+			],
+			[
+				"isIp",
+				"isIphone"
+			],
+			[
+				"ua",
+				"uagent"
+			],
+			[
+				"sli",
+				"slideUp"
+			],
+			[
+				"name",
+				"name-artist"
+			],
+			[
+				"detail",
+				"detail-right"
+			],
+			[
+				"blo",
+				"blog-container"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/views/content/schedule/member-schedule.php",
+			"settings":
+			{
+				"buffer_size": 3039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/content/settings/home.php",
+			"settings":
+			{
+				"buffer_size": 6057,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/style.less",
+			"settings":
+			{
+				"buffer_size": 8662,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/template/index.php",
+			"settings":
+			{
+				"buffer_size": 3687,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 480 files for \"//members\"\n\n0 matches across 0 files\n\n\nSearching 480 files for \"/members/\"\n\n/Applications/MAMP/htdocs/iReport/application/controllers/members.php:\n   29  		$data_send['members'] = $this->user->get_all_users();\n   30  		$data_send['position'] = $this->options->get_options_by_key('position');\n   31: 		$data_view['content'] = $this->load->view('content/members/home',$data_send,true);\n   32  		$this->load->view('template/index',$data_view);\n   33  	}\n   ..\n   36  	{\n   37  		$data_send['position'] = $this->options->get_options_by_key('position');\n   38: 		$data_view['content'] = $this->load->view('content/members/form-new',$data_send, true);\n   39  		$this->load->view('template/index',$data_view);	\n   40  	}\n   ..\n   87  \n   88  		$data_send['position'] = $this->options->get_options_by_key('position');\n   89: 		$data_view['content'] = $this->load->view('content/members/form-new',$data_send, true);\n   90  		$this->load->view('template/index',$data_view);\n   91  	}\n   ..\n   97  			$data_send['member'] = $this->user->get_users_by_attr(array('user_ID' => $id), 'row');\n   98  			$data_send['position'] = $this->options->get_options_by_key('position');\n   99: 			$data_view['content'] = $this->load->view('content/members/form-edit',$data_send, true);\n  100  			$this->load->view('template/index',$data_view);\n  101  		}\n  ...\n  148  		$data_send['member'] = $this->user->get_users_by_attr(array('user_ID' => $ID), 'row');\n  149  		$data_send['position'] = $this->options->get_options_by_key('position');\n  150: 		$data_view['content'] = $this->load->view('content/members/form-edit',$data_send, true);\n  151  		$this->load->view('template/index',$data_view);\n  152  	}\n\n/Applications/MAMP/htdocs/iReport/assets/js/engine.js:\n   80  		if(ID)\n   81  		{\n   82: 			$('#confirm form').attr('action', BASE_URL + index_p + '/members/reset');\n   83  			$('#confirm form input#ID').val(ID);\n   84  		}\n   ..\n   92  		if(ID)\n   93  		{\n   94: 			$('#confirm form').attr('action', BASE_URL + index_p + '/members/delete');\n   95  			$('#confirm form input#ID').val(ID);\n   96  		}\n\n7 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 2129,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "assets/js/engine.js",
+			"settings":
+			{
+				"buffer_size": 9126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/members.php",
+			"settings":
+			{
+				"buffer_size": 5420,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db.sql",
+			"settings":
+			{
+				"buffer_size": 5064,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/iReport/application/controllers/schedule.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/schedule/me-edit.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/schedule/member-schedule.php",
+		"/Applications/MAMP/htdocs/iReport/application/models/model_schedule.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/template/footer.php",
+		"/Applications/MAMP/htdocs/iReport/application/models/model_user.php",
+		"/Applications/MAMP/htdocs/iReport/application/models/model_init.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/schedule/home.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/presence/home.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/data/schedule-me.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/data.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/signin.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/settings.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/generation.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/dashboard/home.php",
+		"/Applications/MAMP/htdocs/iReport/assets/css/style.less",
+		"/Applications/MAMP/htdocs/iReport/assets/js/engine.js",
+		"/Applications/MAMP/htdocs/iReport/application/views/template/sidebar.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/template/header.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/template/index.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/schedule/me.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/template.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/presence.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/members.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/home.php",
+		"/Applications/MAMP/htdocs/iReport/application/controllers/account.php",
+		"/Applications/MAMP/htdocs/iReport/application/models/model_options.php",
+		"/Applications/MAMP/htdocs/iReport/application/models/model_table.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/template/template-login.php",
+		"/Applications/MAMP/htdocs/iReport/application/config/routes.php",
+		"/Applications/MAMP/htdocs/iReport/application/views/content/generation/form-edit.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_funeral_v2/wp-content/themes/funeralselect/js/engine.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_funeral_v2/wp-config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_funeral_v2/.htaccess",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_funeral_v2/wp-config-sample.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/application/models/model_options.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/application/models/model_table.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/application/views/template/sidebar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/application/views/content/schedule/home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/application/views/_template/home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/application/views/content/presence/home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/assets/js/engine.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/assets/js/plug.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/application/views/template/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/assets/css/style.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/untitled.sublime-workspace",
+		"/Applications/XAMPP/xamppfiles/htdocs/iReport/untitled.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-mobile-header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/style-iphone.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/js/engine.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-mobile-home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-mobile-location.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-mobile-sleep.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-mobile-terms-conditions.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-mobile-email.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-mobile-facilities.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-nav.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-location.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/functions.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/include/kh_custom_field.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-register.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-about.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-landselling.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-houseland.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/style.less",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/js/engine.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-sitemap.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-completedhomes.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/wp-content/themes/woodlands/wl-contact.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_woodlands/woodlands.sublime-project",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_sifa/assets/script/engine-mobile-b2c.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-terms-conditions.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/kh_united/wp-content/themes/united/united-sleep.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/login.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/logout.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/admin/admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/admin/armada.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/beranda.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/read.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/models/berita.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/admin/berita.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/admin/gambar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/admin/home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/controllers/admin/penawaran.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/admin/edit-admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/admin/index-admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/admin/tambah-admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/armada/index-armada.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/armada/tambah-armada.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/berita/edit-berita.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/berita/index-berita.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/berita/tambah-berita.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/gambar/index-gambar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/gambar/tambah-gambar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/penawaran/index-penawaran.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/admin/penawaran/tambah-penawaran.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/template/form-login.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/views/template/template-admin.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/config/autoload.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/models/general.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/models/gambar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/models/pemesanan.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/config/config.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/titip/ricky/application/config/database.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/_template/login.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/_template/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/views/admin/template/_content.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/views/template/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/views/template/sidebar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/views/template/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/views/template/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/views/admin/template/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/controllers/home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/views/admin/template/_content",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/.htaccess",
+		"/Applications/XAMPP/xamppfiles/htdocs/iSkripsi/application/controllers/user.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iFrame/application/config/database.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iFrame/application/libraries/iskripsi.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iFrame/application/models/model_file.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iFrame/application/models/model_user.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/iFrame/application/models/model_table.php"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Applications/XAMPP/xamppfiles/htdocs/beriklan/application/views/member/old",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/members/",
+			"//members",
+			"$schedule",
+			"#34495e",
+			"signup",
+			"in_array",
+			"using",
+			"data-toggle",
+			"id=\"checkbox2\"",
+			"schedule",
+			"function clickControl()",
+			"genre",
+			"logo-genre",
+			"debug(",
+			"debug",
+			".artists",
+			"useportrait",
+			"/6",
+			"content-reservation",
+			"wl-video.png",
+			"title-text",
+			"checkbox",
+			"https",
+			"checkbox",
+			".pagecontainer .page .terms-conditions-container h2 {\n		font-family: 'GothamBoldRegular';\n		margin-bottom: 13%;\n		text-transform: uppercase;\n	}",
+			"<?php echo BASE_URL; ?>third_party/assets",
+			"index.php/",
+			"form",
+			"assets",
+			"validation-engine.css",
+			"         ",
+			"third_party/",
+			"third_party",
+			"assets/",
+			"public ",
+			"'';",
+			"datatosend['countKriteria']",
+			"avgx",
+			"$datatosend['konsistensi",
+			"isMobile",
+			"mobile",
+			"removeErrorMsgOnIphone",
+			"showErrorMsgOnIphone",
+			"showErrorMsgonIphone",
+			"typeof",
+			"setcookie",
+			"setcooki",
+			"isiphone",
+			"cssUpdateIphone",
+			"iphoneinsertHTML",
+			".menu-content",
+			"menu-content",
+			"'test'",
+			"\"test\"",
+			"\"test",
+			"debug(\"tes",
+			"imamsrifkan",
+			"debug",
+			"test",
+			"usenicescr",
+			"usenicesco",
+			"run",
+			".page",
+			"basic_model",
+			"getavg",
+			"$get[",
+			"datatosave2",
+			"datatocheck2",
+			"$j",
+			"$i",
+			"data_anggotal",
+			"data_anggota_mode",
+			"proses",
+			"list",
+			"background",
+			"backgroundd",
+			"usenice",
+			"iphone",
+			"isiphone",
+			"iphonein",
+			"list-page",
+			"brad",
+			"swipe",
+			".css(",
+			".css",
+			"background-image",
+			"height",
+			"background-",
+			"backgroun",
+			"position",
+			"page",
+			".page",
+			".page.home",
+			"home",
+			"backstre",
+			"issafari",
+			"blog-content",
+			"menuhover",
+			"menuH",
+			"menuhoverbox",
+			"bg-blue",
+			"newcurrentpage",
+			"currentmenu",
+			"button",
+			">\n",
+			":before",
+			"post-date",
+			"keycontroller",
+			"background:",
+			"click",
+			"\"></",
+			"dain",
+			"fbs",
+			".fbs",
+			"#fbs",
+			"#fbcontent",
+			"#tweetcontent",
+			"#tweets",
+			"#fbs",
+			"bg-page",
+			"backstr",
+			"debug",
+			".detail",
+			"dainw",
+			"fbcontent",
+			"newsfeed",
+			"container",
+			"fullwidth"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$member_schedule",
+			"signin",
+			"name=\"schd[]\" data-toggle",
+			"name=\"schd[]\"",
+			"",
+			"<?php echo BASE_URL; ?>third_party/assets",
+			"",
+			"<?php echo BASE_URL; ?>third_party",
+			"third_party/assets/",
+			"",
+			"removeErrorMsgOnMobile",
+			"showErrorMsgOnMobile",
+			"cssUpdateMobile",
+			"mobileInsertHTML",
+			"$getData[",
+			"datatosave_2",
+			"datatocheck_2",
+			"$y",
+			"$x",
+			"data_anggota",
+			"globalSpeedAnimate",
+			"detail-left",
+			"b2b",
+			"b2c",
+			"b2b",
+			"/landing/artist",
+			"16.7",
+			"h2",
+			"b2b",
+			"cnt-show",
+			"cnt-detail",
+			"cnt-button",
+			"text-uppercase",
+			"artists",
+			"exminutes",
+			"extimes",
+			"sfFacilities",
+			"sfGallery",
+			"192.168.0.105",
+			"localhost",
+			"large-right",
+			"box-contact",
+			"box-action",
+			"805",
+			"url('font/gothic",
+			"url('font/century",
+			"675",
+			"page",
+			"#WB",
+			"",
+			"6%",
+			"1",
+			".fix-logo",
+			"$img",
+			"<?php echo base_url()?>public/assets",
+			"<?php echo base_url()?>public/vendors",
+			"<?php echo base_url()?>public/js",
+			"<?php echo base_url()?>public/css",
+			"../img/",
+			"CenturySchoolbookRegular",
+			"#check-in",
+			"#check-out",
+			"",
+			"slider-frame",
+			".slider",
+			"slider",
+			"<?php echo TEMPLATE_URL?>images",
+			"large",
+			"medium",
+			"30",
+			"2030",
+			"xlarge",
+			"TEMPLATE_URL?>",
+			"$template_url",
+			"bullet",
+			".",
+			"logo",
+			"logo-precomposed",
+			"large",
+			"<?php echo $base_url?>",
+			"komentar",
+			"dataCategories",
+			"member/",
+			"",
+			"Komentar :",
+			"comment",
+			"../assets/css/",
+			"fb-button",
+			"Serial Number",
+			"serial_number",
+			"'name_item'",
+			"serial_kode",
+			"serial_number"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/views/content/schedule/member-schedule.php",
+					"settings":
+					{
+						"buffer_size": 3039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 410.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/content/settings/home.php",
+					"settings":
+					{
+						"buffer_size": 6057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 58.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/css/style.less",
+					"settings":
+					{
+						"buffer_size": 8662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6210,
+								6210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5212.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/template/index.php",
+					"settings":
+					{
+						"buffer_size": 3687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 201.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 2129,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										376,
+										385
+									],
+									[
+										633,
+										642
+									],
+									[
+										894,
+										903
+									],
+									[
+										1245,
+										1254
+									],
+									[
+										1596,
+										1605
+									],
+									[
+										1851,
+										1860
+									],
+									[
+										2026,
+										2035
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1852,
+								1852
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 257.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/js/engine.js",
+					"settings":
+					{
+						"buffer_size": 9126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2766,
+								2766
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1521.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/controllers/members.php",
+					"settings":
+					{
+						"buffer_size": 5420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "db.sql",
+					"settings":
+					{
+						"buffer_size": 5064,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5064,
+								5064
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 829.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"chedul",
+				"application/controllers/schedule.php"
+			],
+			[
+				"members",
+				"application/controllers/members.php"
+			],
+			[
+				"style",
+				"assets/css/style.less"
+			],
+			[
+				"model_table",
+				"application/models/model_table.php"
+			],
+			[
+				"model_tab",
+				"application/models/model_table.php"
+			],
+			[
+				"model_op",
+				"application/models/model_options.php"
+			],
+			[
+				"engins",
+				"assets/js/engine.js"
+			],
+			[
+				"woodla",
+				"woodlands.sublime-project"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"irepo",
+				"/Applications/XAMPP/xamppfiles/htdocs/iReport/iReport.sublime-project"
+			],
+			[
+				"sifa",
+				"/Applications/XAMPP/xamppfiles/htdocs/kh_sifa/sifa.sublime-project"
+			],
+			[
+				"",
+				"/Applications/XAMPP/xamppfiles/htdocs/kh_sifa/sifa.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}

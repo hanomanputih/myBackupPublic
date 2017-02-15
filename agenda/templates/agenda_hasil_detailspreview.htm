@@ -1,0 +1,24 @@
+Laporan<br>
+Detail ditemukan: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Displaying first: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Petugas</strong></td>
+<td><strong>Laporan Kegiatan</strong></td>
+<td><strong>Catatan penting</strong></td>
+<td><strong>Naskah Digital</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_hadir_value}</td>
+<td>{$Hasil_value}</td>
+<td>{$Catatan_value}</td>
+<td>{$Naskah_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

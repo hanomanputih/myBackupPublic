@@ -1,0 +1,302 @@
+<html {$html_attrs}>
+<head>
+<title>Assign users to groups</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#height100{$id} {padding:10px;}
+#toplinks_block{$id} {padding:2px 5px}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#menu_block{$id} {clear:left;margin-top:10px;}
+#menu_block{$id} div {{BEGIN RTL_block}float:right;{END RTL_block}{BEGIN LTR_block}float:left;{END LTR_block}}
+#menu_block{$id} div div {margin-right:1px;float:none;}
+#menu_block{$id} a {white-space:nowrap;}
+#search_records_block{$id} {padding:9px 10px 13px 10px;text-align:right}
+#search_records_block{$id} > * {margin:2px 2px;vertical-align:middle}
+#detFound{$id}, #pageOf{$id} {white-space:nowrap}
+#recordcontrols_block{$id} {padding:13px 10px 9px 10px;text-align:right}
+#recordcontrols{$id} > *,#newrecordcontrols{$id} > * {margin:2px 2px;vertical-align:middle}
+#search_records_top{$id} {{BEGIN RTL_block}clear:right;{END RTL_block}{BEGIN LTR_block}clear:left;{END LTR_block}}
+#message_block{$id} {text-align:center;}
+#grid_block{$id} {margin-top:10px;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader * {margin:0px 5px; vertical-align:middle}
+#mastertable_block{$id} {margin:10px 0}
+#searchOptions{$id}{
+	margin-right: 10px;
+	padding-bottom: 18px;
+}
+#searchPanelBottomRound{$id}{
+	/*margin-right: 10px !important;*/
+}
+#searchform{$id}{
+	float: left; 
+}
+#searchPanelContainer{$id}{
+	width: 200px;
+	margin-top:10px;
+	display: block; 
+	float: none;
+	position:absolute;
+}
+body{margin:0px;padding:0px;}
+
+/*report styles*/
+
+
+#export_links{$id} * {padding:0}
+</style>
+{END style_block}
+<!--[if IE]>
+{BEGIN iestyle_block}
+<style>
+#toplinks_block{$id} * {margin:2px 3px;vertical-align:middle;}
+#search_records_block{$id} * {margin:1px 1px;vertical-align:middle}
+#recordcontrols{$id} *, #newrecordcontrols{$id} * {margin:1x 1px;vertical-align:middle}
+</style>
+{END iestyle_block}
+<![endif]-->
+</head>
+<body marginheight=0 marginwidth=0 {$bodyattrs}>
+{BEGIN body}
+<div id="height100{$id}">
+{$header}
+
+{BEGIN toplinks_block}
+<div>
+<b class="xtop"><b class="rb1 rb1_top"></b><b class="rb2 rb2_top"></b><b class="rb3 rb3_top"></b><b class="rb4 rb4_top"></b></b>
+<div class="top" id="toplinks_block{$id}" >
+<span><font style="FONT-FAMILY: Verdana, Arial;">Anda login sebagai</font>&nbsp;<b>{$username}</b>&nbsp;</span>
+<span class=buttonborder><input type=button class=button value="Logout" {$logoutlink_attrs}></span>
+
+{BEGIN exitadminarea_link}
+<span class=buttonborder><input type=button class=button value="Exit Admin Area" {$exitaalink_attrs}></span>
+{END exitadminarea_link}
+
+{BEGIN changepwd_link}
+<span class=buttonborder><input type=button class=button value="Rubah password" {$changepwdlink_attrs}></span>
+{END changepwd_link}
+
+{BEGIN asearch_link}
+<span class=buttonborder><input type=button class=button value="Pencarian detail" {$asearchlink_attrs}></span>
+{END asearch_link}
+
+
+
+
+
+
+
+
+</div>
+<b class="xbottom"><b class="rb4 rb4_top"></b><b class="rb3 rb3_top"></b><b class="rb2 rb2_top"></b><b class="rb1 rb1_top"></b></b>
+</div>
+{END toplinks_block}
+
+<!-- MenuBegin -->
+{BEGIN menu_block}
+<div id="menu_block{$id}" >
+<!-- Строим Admin menu -->
+<style>
+.menuitem {padding:6px 18px 10px 13px;margin-bottom:1px}
+.menuitem_active {padding:6px 18px 11px 13px;}
+</style>
+{BEGIN admin_rights_tablelink}
+	<div>
+		<b class="rb1 rb1_menu"></b><b class="rb2 rb2_menu"></b><b class="rb3 rb3_menu"></b><b class="rb4 rb4_menu"></b>
+		<div class="menuitem">
+			<a class="menu_db2" {$admin_rights_tablelink_attrs}>
+Permissions
+			</a>
+		</div>
+	</div>
+{END admin_rights_tablelink}
+{BEGIN admin_members_tablelink}
+	<div>
+		<b class="rb1 rb1_menua"></b><b class="rb2 rb2_menua"></b><b class="rb3 rb3_menua"></b><b class="rb4 rb4_menua"></b>
+		<div class="menuitem_active">
+			<a class="menu_db" {$admin_members_tablelink_attrs}>
+Assign users to groups
+			</a>
+		</div>
+	</div>
+{END admin_members_tablelink}
+{BEGIN admin_users_tablelink}
+	<div>
+		<b class="rb1 rb1_menu"></b><b class="rb2 rb2_menu"></b><b class="rb3 rb3_menu"></b><b class="rb4 rb4_menu"></b>
+		<div class="menuitem">
+			<a class="menu_db2" {$admin_users_tablelink_attrs}>
+Add/Edit users
+			</a>
+		</div>
+	</div>
+{END admin_users_tablelink}
+</div>
+{END menu_block}
+
+<!-- MenuEnd -->
+
+{BEGIN search_records_block} 
+<div id="search_records_top{$id}">
+<b class="rb2 rb2_search"></b><b class="rb3 rb3_search"></b><b class="rb4 rb4_search"></b>
+<div id="search_records_block{$id}" class="main_table_border_P">
+
+
+{BEGIN searchform}
+	<!-- Search panel header for horizontal layouts -->
+	<span id="searchform{$id}" align="absmiddle">
+	<span id="searchPanelHeader{$id}">  
+		{$simpleSearchTypeCombo}
+		
+		{$simpleSearchFieldCombo}
+		
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}
+			<span class="buttonborder"><input class="button" type="button" style="width: 18px; background-image: url(images/search/search.gif);" {$searchbutton_attrs} ></span>
+		{END searchform_search}
+		&nbsp;
+		{BEGIN searchform_showall}	
+		<span id="showall{$id}" class="buttonborder"><input type="button" class="button" value="Tampil semua" {$showallbutton_attrs}></span>
+		{END searchform_showall}
+	</span>
+	{BEGIN searchPanelTopButtons}
+	<span>
+		&nbsp;
+		<span class="buttonborder"><input class="button" type="button" id="showSrchWin{$id}" style="width: 18px; background-image: url(images/search/showWindowPin.gif);" {$showHideSearchWin_attrs} ></span>
+		&nbsp;		
+		<span class="buttonborder"><input class="button" type="button" id="showOptPanel{$id}" style="width: 18px; background-image: url(images/search/showOptions.gif);" {$showHideSearchPanel_attrs} ></span>
+	</span>
+	{END searchPanelTopButtons}
+</span>  
+{END searchform}
+
+
+
+
+
+<div style="/*text-align: right;*/ display: inline; ">
+&nbsp;&nbsp;&nbsp;
+{BEGIN details_block}
+<span id="detFound{$id}">Detail ditemukan: {$records_found}&nbsp;</span>
+{END details_block}
+{BEGIN pages_block}
+<span id="pageOf{$id}">Halaman {$page} dari {$maxpages}</span>
+{END pages_block}
+
+&nbsp;&nbsp;&nbsp;
+{BEGIN recordspp_block}
+<span id="recordspp_block{$id}">
+Jumlah record per halaman:
+<select {$recordspp_attrs}>
+<option value="10" {$rpp10_selected}>10</option>
+<option value="20" {$rpp20_selected}>20</option>
+<option value="30" {$rpp30_selected}>30</option>
+<option value="50" {$rpp50_selected}>50</option>
+<option value="100" {$rpp100_selected}>100</option>
+<option value="500" {$rpp500_selected}>500</option>
+</select>
+</span>
+{END recordspp_block}
+</div>
+</div>
+</div> 
+{END search_records_block} 
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">
+{$adv_search_panel} 
+</div>
+<b class="xbottom" id="searchPanelBottomRound{$id}" {$searchPanelBottomRound_attrs}>
+	<b class="rb4 rb4_panel"></b>
+	<b class="rb3 rb3_panel"></b>
+	<b class="rb2 rb2_panel"></b>
+	<b class="rb1 rb1_panel"></b>
+</b>
+
+<div moveForSearch="move{$id}" {$marginStyle}>
+
+{BEGIN recordcontrols_block}
+<div id="recordcontrols_block{$id}" class="body3">
+{BEGIN record_controls}
+<span id="record_controls{$id}">
+
+
+
+
+</span>
+{END record_controls}
+</div>
+<b class="xbottom"><b class="rb4 rb4_controls"></b><b class="rb3 rb3_controls"></b><b class="rb2 rb2_controls"></b><b class="rb1 rb1_controls"></b></b>
+{END recordcontrols_block}
+
+<div id="usermessage{$id}" class="message">{$user_message}</div>
+
+
+{BEGIN savebuttons_block}
+<div id="savebuttons_block" style="margin:5px 0">
+<input type=submit style="width:100pt" class="button" value="Simpan" {$savebutton_attrs}>
+<input type=reset style="width:100pt" class="button" value="Reset" {$resetbutton_attrs}>
+</div>
+{END savebuttons_block}
+<!-- delete form -->
+{BEGIN grid_block}
+<div id="grid_block{$id}">
+<table name="maintable" class="data" align="center" width="100%" border="0" cellpadding=3 cellspacing=0>
+ <tr valign="top" class=blackshade>
+  <td style="width:100pt" class="headerlist">
+   <a class="tablelinks" {$userheaderlink_attrs}">Users</a>
+   {$users_orderimg}
+  </td>
+  {BEGIN usergroup_header}
+  <td class="headerlist">
+   <a class="tablelinks" {$groupheaderlink_attrs}">{$groupname}</a>{$groupheader_img}
+   <br><br><input type=checkbox {$groupheaderbox_attrs}>
+  </td>
+  {END usergroup_header}
+ </tr>
+<!-- table data -->
+ {BEGIN grid_row}
+ <tr valign="top" {$rowattrs} {$rowstyle}> 
+  <td style="text-align:left;" class="headerlist"><input type=checkbox {$usercheckbox_attrs}>
+   {$username} 
+  </td>
+  {BEGIN usergroup_boxes}
+  <td class=borderbody align=center>
+   <input type=checkbox {$groupbox_attrs}>
+  </td>
+  {END usergroup_boxes}
+ </tr>
+ {END grid_row}
+</table>
+</div>
+{END grid_block}
+
+{BEGIN pagination_block}
+<div>
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div id="pagination_block{$id}" class="xboxcontent">{$pagination}</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+{END pagination_block}
+
+{BEGIN message_block}
+<div>
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" id="message_block">{$message}</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+{END message_block}
+{$footer}
+</div>
+{END body}
+</body>
+</html>
+

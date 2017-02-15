@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Registrasi Online</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->
+<STYLE>
+#center_block {width:50%;margin:0 auto;min-width:500px;}
+#contents_block {text-align:center;}
+#header_block {white-space:nowrap;height:25px;padding:0 10px 5px;text-align:center;}
+#main_block {padding:10px 0 5px 0;text-align:center;}
+#inmain_block {margin:0 10px}
+#fields_block {width:100%;margin:0;padding:10px}
+#header_block > span {margin:0 5px}
+#buttons_block {padding:10px 10px 5px}
+#buttons_block div {padding:3px}
+#inmain_block {margin:0 0px;width:100%}
+#fields_block td {padding:3px 14px}
+#username_block td {padding-top:13px;white-space:nowrap;}
+#space_block td {padding-bottom:13px}
+#captcha_block td {padding-bottom:13px}
+#main_block {padding:10px 10px 5px 10px;}
+#required_block{$id} {text-align:left;padding:5px}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>{BEGIN body}{$header} 
+<TABLE id=center_block align=center>
+  <TBODY>
+  <TR>
+    <TD id=contents_block><B class=xtop><B class="rb1 rb1_top"></B><B 
+      class="rb2 rb2_top"></B><B class="rb3 rb3_top"></B><B 
+      class="rb4 rb4_top"></B></B>
+      <DIV class=top id=header_block><B><FONT size=+1>Registrasi 
+      Online</FONT></B> </DIV>
+      <DIV class=xboxcontentb id=main_block>
+      <DIV class=xboxcontentb id=inmain_block><B class=xtop><B class=xb1></B><B 
+      class=xb2></B><B class=xb3></B><B class=xb4></B></B>
+      <TABLE class=loginshade id=fields_block cellSpacing=0 cellPadding=4 
+      border=0>
+        <TBODY>
+        {BEGIN Username_fieldblock}<TR id=Username_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN Username_label}Username{END Username_label}</DIV></TD>
+          <TD width="50%">{$Username_editcontrol} 
+            <DIV class=error>{$user_msg}</DIV></TD></TR>{END Username_fieldblock}
+        {BEGIN Passw_fieldblock}<TR id=Passw_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN Passw_label}Password{END Passw_label}</DIV></TD>
+          <TD width="50%">{$Passw_editcontrol} 
+            <DIV class=error>{$password_msg}</DIV></TD></TR>{END Passw_fieldblock}
+        {BEGIN confirm_block}<TR id=confirm_block>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN confirm_label}Masukkan kembali 
+            password{END confirm_label}</DIV></TD>
+          <TD width="50%">{$confirm_editcontrol1} 
+
+            <DIV class=error>{$reenter_msg}</DIV></TD></TR>{END confirm_block}
+        {BEGIN Nama_Lengkap_fieldblock}<TR id=Nama_Lengkap_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN Nama_Lengkap_label}Nama Lengkap{END Nama_Lengkap_label}</DIV></TD>
+          <TD width="50%">{$Nama_Lengkap_editcontrol} </TD></TR>{END Nama_Lengkap_fieldblock}
+        {BEGIN NIP_fieldblock}<TR id=NIP_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN NIP_label}NIP{END NIP_label}</DIV></TD>
+          <TD width="50%">{$NIP_editcontrol} </TD></TR>{END NIP_fieldblock}
+        {BEGIN Instansi_fieldblock}<TR id=Instansi_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN Instansi_label}Instansi{END Instansi_label}</DIV></TD>
+          <TD width="50%">{$Instansi_editcontrol} </TD></TR>{END Instansi_fieldblock}
+        {BEGIN Alamat_Kantor_fieldblock}<TR id=Alamat_Kantor_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN Alamat_Kantor_label}Alamat 
+Kantor{END Alamat_Kantor_label}</DIV></TD>
+          <TD width="50%">{$Alamat_Kantor_editcontrol} </TD></TR>{END Alamat_Kantor_fieldblock}
+        {BEGIN Telp_Kantor_fieldblock}<TR id=Telp_Kantor_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN Telp_Kantor_label}Telp Kantor{END Telp_Kantor_label}</DIV></TD>
+          <TD width="50%">{$Telp_Kantor_editcontrol} </TD></TR>{END Telp_Kantor_fieldblock}
+        {BEGIN Telp_HP_fieldblock}<TR id=Telp_HP_fieldblock>
+          <TD align=left width="50%">
+            <DIV align=left>{BEGIN Telp_HP_label}Telp HP{END Telp_HP_label}</DIV></TD>
+          <TD width="50%">{$Telp_HP_editcontrol} </TD></TR>{END Telp_HP_fieldblock}
+        <TR id=space_block>
+          <TD colSpan=2>{$event captcha}</TD></TR></TBODY></TABLE>
+      {BEGIN buttons_block}<DIV class=downedit2 id=buttons_block><!--captcha_marker-->
+      {BEGIN legend}<DIV class=toplist id="required_block{$id}"><IMG 
+      alt=bullet src="images/icon_required.gif"> - Field harus diisi</DIV>{END legend}
+      <DIV id=submit_block><SPAN class=buttonborder><INPUT class=button type=submit value=Ok {$submit_attrs}></SPAN> 
+      </DIV>
+      {BEGIN message_block}<DIV><FONT color=red>{$message}</FONT> 
+      </DIV>{END message_block}
+      <DIV><A href="login.php" {$backlink_attrs}>Kembali ke halaman login</A> 
+      </DIV></DIV>{END buttons_block}<B class=xbottom><B class=xb4a></B><B class=xb3a></B><B 
+      class=xb2a></B><B class=xb1a></B></B></DIV></DIV><B class=xbottom><B 
+      class=xb4b4></B><B class=xb3b4></B><B class=xb2b4></B><B 
+      class=xb1b4></B></B></TD></TR></TBODY></TABLE>{$footer} {END body}</BODY></HTML>

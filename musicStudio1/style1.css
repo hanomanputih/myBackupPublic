@@ -1,0 +1,122 @@
+/* 
+    Document   : style1
+    Created on : 24 Apr 12, 14:29:18
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{
+    font-family: Calibri;
+    background-color: #F0FFFF;
+}
+#header{
+    border: 0px solid;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 70px
+}
+
+#subheader{
+    font-family: Georgia;
+    font-size: 20px;
+}
+#wrapper {
+    margin: auto;
+    /*    width: 985px;*/
+    width: 1310px;
+    padding: 0px;
+}
+#menu {
+    font-family: Tahoma;
+    font-weight: bold;
+    width: 680px;
+    background-color: black;
+    font-size: 15px;
+    padding: 1px 5px;
+    box-shadow: 10px 10px 20px #888888;
+    color: white;
+    border-bottom-right-radius:50px;
+    -moz-border-bottom-right-radius:50px;
+    -webkit-border-bottom-right-radius:50px;
+        border-top-left-radius:50px;
+    -moz-border-top-left-radius:50px;
+    -webkit-border-top-left-radius:50px; 
+    }
+
+#menu ul li {
+    list-style-position: none;
+    display: inline;
+    padding-right: 20px;
+}
+#menu li a{
+
+    text-decoration:none;
+}
+
+#judul {
+    font-family: Georgia;
+    font-style: italic;
+}
+
+
+#kiri{
+    width:655px;
+    float: left;
+    padding: 25px;
+    border-bottom: 1px solid;
+    /*    border-right: 1px solid;*/
+    /*    background-color: #F0F0F0 ;*/
+}
+#tebal p {
+    opacity:0.9;
+    filter:alpha(opacity=90);
+}
+#kanan {
+    width: 250px;
+    float:right;
+    padding: 25px;
+    padding-top: 0px;
+    border: 1px solid;
+    border-radius:20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    background-color: #000000 ;
+    color: white;
+    box-shadow: 10px 10px 5px #888888;
+    margin-top: 100px;
+}
+
+
+a {
+    color: white
+}
+
+#menu a:link {
+    color: white; 
+}
+
+#menu a:hover {
+    color: red;
+}
+
+/*#menu a:visited {
+    color : white;
+}*/
+#footer {
+/*    width: 1000px;*/
+    text-align: center;
+    padding : 10px;
+    font-family: Tahoma;
+    font-size: 15px;
+    
+}
+root { 
+    display: block;
+}
+

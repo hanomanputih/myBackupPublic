@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Hadir</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->
+<STYLE>
+#center_block{$id} {width:auto;margin:0 auto;min-width:500px;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:31px;padding-top:5px;}
+#main_block{$id} {padding:10px 0;width:100%}
+#inmain_block{$id} {margin:0 10px}
+#fields_block{$id} {width:100%;mrgin-top:10px;}
+#buttons_block{$id} {width:100%;padding-bottom:5px}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px}
+#span{$id} {margin:0 20px 0 20px;}
+</STYLE>
+<!--[if IE]>
+<STYLE>
+#main_block {padding:10px 10;}
+#fields_block{$id} {width:auto;}
+#inmain_block {margin:0 0px}
+</STYLE>
+<![endif]-->
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY>{BEGIN body}{$header} 
+{BEGIN editForm}<TABLE id="center_block{$id}" align=center>
+  <TBODY>
+  <TR>
+    <TD id="contents_block{$id}"><B class=xtop><B 
+      class="rb1 rb1_top"></B><B class="rb2 rb2_top"></B><B 
+      class="rb3 rb3_top"></B><B class="rb4 rb4_top"></B></B>
+      <DIV class=top id="header_block{$id}">Hadir, Edit record [ No: {$show_key1} 
+      ] </DIV>
+      <DIV class=xboxcontentb id="main_block{$id}">
+      <DIV class=xboxcontentb id="inmain_block{$id}">
+      {BEGIN message_block}<DIV class=downedit id="message_block{$id}">{$message}</DIV>{END message_block}
+      <TABLE id="fields_block{$id}" cellSpacing=0 cellPadding=4 border=0>
+        <TBODY>
+        {BEGIN id_agenda_fieldblock}<TR>
+          <TD class=editshadeleft_b style="PADDING-LEFT: 15px" width=150>{BEGIN id_agenda_label}Agenda{END id_agenda_label}</TD>
+          <TD class=editshaderight_lb style="PADDING-LEFT: 10px" 
+            width=250>{$id_agenda_editcontrol} </TD></TR>{END id_agenda_fieldblock}
+        {BEGIN Instansi_fieldblock}<TR>
+          <TD class=editshade_b style="PADDING-LEFT: 15px" width=150>
+            <P align=right>Instansi</P></TD>
+          <TD class=editshade_lb style="PADDING-LEFT: 10px" width=250>{$Instansi_editcontrol} </TD></TR>{END Instansi_fieldblock}
+        {BEGIN id_bos_fieldblock}<TR>
+          <TD class=editshade_b style="PADDING-LEFT: 15px" width=150>
+            <P align=right>Petugas</P></TD>
+          <TD class=editshade_lb style="PADDING-LEFT: 10px" width=250>{$id_bos_editcontrol} </TD></TR>{END id_bos_fieldblock}
+        {BEGIN Jabatan_fieldblock}<TR>
+          <TD class=editshade_b style="PADDING-LEFT: 15px" width=150>
+            <P align=right>Jabatan</P></TD>
+          <TD class=editshade_lb style="PADDING-LEFT: 10px" width=250>{$Jabatan_editcontrol} </TD></TR>{END Jabatan_fieldblock}
+        {BEGIN Jam_fieldblock}<TR>
+          <TD class=editshade_b style="PADDING-LEFT: 15px" width=150>Jam 
+          entri</TD>
+          <TD class=editshade_lb style="PADDING-LEFT: 10px" width=250>{$Jam_editcontrol} </TD></TR>{END Jam_fieldblock}</TBODY></TABLE>
+      <DIV class=downedit2 id="buttons_block{$id}">
+      {BEGIN legend}<DIV id="required_block{$id}"><IMG alt=bullet 
+      src="images/icon_required.gif"> - Field harus diisi</DIV>{END legend}{$legendBreak} 
+      {BEGIN save_button}<SPAN class=buttonborder><INPUT class=button id="savebutton{$id}" type=submit value=Simpan {$savebutton_attrs}></SPAN>{END save_button} 
+      {BEGIN reset_button}<SPAN class=buttonborder><INPUT class=button type=reset value=Reset {$resetbutton_attrs}></SPAN>{END reset_button} 
+      <SPAN id="span{$id}">&nbsp;</SPAN> {BEGIN prev_button}<SPAN class=buttonborder><INPUT class=button id="prev{$id}" type=reset value=" <<< " {$prevbutton_attrs}></SPAN>{END prev_button} 
+      {BEGIN back_button}<SPAN class=buttonborder><INPUT class=button type=button value=Kembali {$backbutton_attrs}></SPAN>{END back_button} 
+      {BEGIN next_button}<SPAN class=buttonborder><INPUT class=button id="next{$id}" type=reset value=" >>> " {$nextbutton_attrs}></SPAN>{END next_button} 
+      </DIV><B class=xbottom><B class=xb4a></B><B class=xb3a></B><B 
+      class=xb2a></B><B class=xb1a></B></B></DIV></DIV><B class=xbottom><B 
+      class=xb4b4></B><B class=xb3b4></B><B class=xb2b4></B><B 
+      class=xb1b4></B></B></TD></TR></TBODY></TABLE>{END editForm}{BEGIN detail_tables}{$displayDetailTable_agenda_hasil} 
+{END detail_tables}<BR><BR>{$footer} {END body}</BODY></HTML>

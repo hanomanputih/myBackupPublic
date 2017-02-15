@@ -1,0 +1,1 @@
+<?phpclass Page extends CI_Controller {	public function view(){		$this->load->view('template/header');		$this->load->view('template/footer');		// $this->load->view('template/'.$header);	}	public function index(){		$this->load->view('welcome_massage');	}}

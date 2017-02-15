@@ -1,0 +1,18 @@
+/* Easy Slider */
+
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#slider, #slider li{ 
+	/* 
+		define width and height of container element and list item (slide)
+		list items must be the same size as the slider area
+		width:825px;
+	*/ 
+	width:825px;
+	overflow:hidden; 
+	}
+
+/* // Easy Slider */

@@ -1,0 +1,135 @@
+{BEGIN searchPanel}
+<style>
+<!--
+
+.searchOptions div{
+	/*margin: 10px 0px 10px 10px;*/
+	padding: 10px 0px 10px 10px;
+}
+
+
+
+#addOption{$id}{
+	/*padding: 1px 5px 13px 5px !important;*/
+}
+
+.addOptionLink{
+	margin: 1px 5px 13px 5px !important;
+}
+
+#bottomSearchButt{$id}{
+	padding: 13px 1px 5px 1px !important;
+}
+#controlChooseMenu{$id}{
+	position: absolute;			
+	display: none;	
+	width: auto;
+	text-align: left;
+	
+}	
+
+#controlsBlock_{$id}{
+	/*display:table;*/
+	width: 180px;
+}
+
+.srchPanelTable, .srchPanelRow{
+	padding:0px !important;
+}
+
+.srchPanelRow{
+	overflow: hidden;
+	width: 180px;
+	margin: 0px !important;
+}
+
+.srchPanelCell{
+	/*padding: 2px !important;*/
+	/*margin: 2px 0px 2px 2px !important;*/
+	padding: 2px 0px 2px 2px !important;
+	float: left; !important;	
+}
+
+.srchPanelCell2{
+	/*width: 100%;*/
+	width: 170px; 
+	/*margin-left: 17px !important;*/
+	padding-left: 17px !important;
+}
+.winTable{	
+	/*border-collapse: collapse;*/
+	border-collapse: separate;	
+}
+
+.delButt{
+	visibility: hidden;
+}
+
+
+
+.addSearchControl{
+	margin: 5px;
+}
+
+.critCont{
+	margin: 10px 0px 0px 0px; 
+}
+-->
+</style>
+
+
+
+<div id="searchOptions{$id}" class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div id="srchCritTop{$id}" class="critCont" style="display: none;">
+		Kriteria:&nbsp;
+    	<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}Semua{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}sembarang{END any_checkbox_label}
+	</div>
+	<div id="addOption{$id}" class="addOption">
+      	<a id="showHideControlChooseMenu{$id}"  class="tablelinkssearch" {$showHideCtrls_attrs}>Add field</a>&nbsp;&nbsp;&nbsp;
+		<a id="showHideSearchType{$id}"  class="tablelinkssearch" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>		
+	</div>
+	<!-- choose controls div -->
+	<div id="controlChooseMenu{$id}" class="controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+			<a id="addSearchControl_Indeks" class="addSearchControl" {$addSearchControl_Indeks_attrs}>Indeks</a>
+			<a id="addSearchControl_KodeSurat" class="addSearchControl" {$addSearchControl_KodeSurat_attrs}>Kode Surat</a>
+			<a id="addSearchControl_NoUrut" class="addSearchControl" {$addSearchControl_NoUrut_attrs}>Nomor Urut</a>
+			<a id="addSearchControl_IsiRingkas" class="addSearchControl" {$addSearchControl_IsiRingkas_attrs}>Isi Ringkas</a>
+			<a id="addSearchControl_Dari" class="addSearchControl" {$addSearchControl_Dari_attrs}>Dari</a>
+			<a id="addSearchControl_TglSurat" class="addSearchControl" {$addSearchControl_TglSurat_attrs}>Tanggal Surat</a>
+			<a id="addSearchControl_NoSurat" class="addSearchControl" {$addSearchControl_NoSurat_attrs}>Nomor Surat</a>
+			<a id="addSearchControl_Pengolah" class="addSearchControl" {$addSearchControl_Pengolah_attrs}>Pengolah</a>
+			<a id="addSearchControl_TglDiteruskan" class="addSearchControl" {$addSearchControl_TglDiteruskan_attrs}>Tanggal diteruskan</a>
+			<a id="addSearchControl_prop" class="addSearchControl" {$addSearchControl_prop_attrs}>Prop</a>
+	</div>
+	<!-- search window controls block, make it visible in window mode and hidden in panel -->
+	<table id="controlsBlock_{$id}_win" class="winTable" style="display: none;" CELLPADDING="3">
+	{BEGIN searchCtrlBlock_win}			
+		<tr class="winRow" {$filterRow_attrs}>	
+			<td class="srchWinCell"></td>		
+			<td class="srchWinCell"></td>
+			<td class="srchWinCell" {$srchTypeCont_attrs_win}></td>
+			<td class="srchWinCell"></td>
+			<td class="srchWinCell"></td>			
+		</tr>
+	{END searchCtrlBlock_win}
+	</table>
+	<!-- add for each for get predefined fields for list search panel, not adv search, visible in panel mode and hidden in window -->	
+	<div id="controlsBlock_{$id}" class="srchPanelTable">		
+	{BEGIN searchCtrlBlock}			
+		<div class="srchPanelRow blockBorder" {$filterDiv_attrs}>	
+			<div class="srchPanelCell">{$delCtrlButt}</div>		
+			<div class="srchPanelCell">{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2" {$srchTypeCont_attrs}>{$searchtype}</div>
+			<div class="srchPanelCell srchPanelCell2" >{$searchcontrol}</div>
+			<div class="srchPanelCell srchPanelCell2" {$secCtrlCont_attrs}>{$searchcontrol1}</div>			
+		</div>
+	{END searchCtrlBlock}
+	</div>
+	<div id="bottomSearchButt{$id}" align="center" {$bottomSearchButt_attrs}>
+		<span class=buttonborder><input type=button class="button" value="Cari" {$searchbutton_attrs}></span> 
+	</div>
+</div>
+{END searchPanel}
